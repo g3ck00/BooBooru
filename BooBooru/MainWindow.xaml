@@ -1,0 +1,22 @@
+﻿<Window x:Class="BooBooru.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooBooru"
+        mc:Ignorable="d"
+        Title="BooBooru v0.1 - by g3ck0" Height="450" Width="800" VerticalAlignment="Center" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen">
+
+
+
+    <Grid>
+
+        <Button x:Name="SearchButton" Content="Search" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Width="780" Click="SearchButton_Click"/>
+        <TextBox x:Name="SearchTextBox" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="safety_pin" VerticalAlignment="Top" Width="780"/>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,58,10,10">
+            <WrapPanel x:Name="ImagesWrapPanel" Margin="5"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
